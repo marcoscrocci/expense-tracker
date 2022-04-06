@@ -1,0 +1,16 @@
+https://github.com/vercel/next.js/tree/canary/examples/with-styled-components
+npx create-next-app --example with-styled-components expense-tracker
+sudo npm i -g create-next-app
+npx create-next-app --example with-styled-components expense-tracker
+cd expense-tracker
+npm run dev
+code . 
+https://nextjs.org/docs/basic-features/typescript
+yarn add --dev typescript @types/react @types/node
+npm i
+npm install @types/styled-components -D
+https://tailwindcss.com/docs/guides/nextjs
+npm install -D tailwindcss postcss autoprefixer
+tailwind.config.js
+https://www.npmjs.com/package/tailwind-styled-components
+npm i tailwind-styled-components

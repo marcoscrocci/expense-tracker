@@ -14,3 +14,6 @@ npm install -D tailwindcss postcss autoprefixer
 tailwind.config.js
 https://www.npmjs.com/package/tailwind-styled-components
 npm i tailwind-styled-components
+https://github.com/fischerafael/tracker
+First commit
+https://youtu.be/xgGm9a1GJWs?list=PLeBknJ2kuv1lcWDHQXLisCytQK5AfL1N6&t=905

@@ -8,7 +8,7 @@ const InputText = ({ label, ...props }: Props) => {
     return (
         <label className="flex flex-col w-full">
             <span>{label}</span>
-            <input {...props} className="border border-gray-200 px-1" />
+            <input {...props} className="border border-gray-200 px-2 h-9" />
         </label>
     );
 };

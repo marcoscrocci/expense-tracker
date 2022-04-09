@@ -1,6 +1,7 @@
 import React from 'react'
-import Link from 'next/link';
+import Link from '../../components/molecules/Link';
 import InputText from '../../components/molecules/inputText';
+import Button from '../../components/atoms/Button';
 
 const Login = () => {
   return (
@@ -14,7 +15,7 @@ const Login = () => {
                 <form className="flex flex-col w-full gap-2">
                     <InputText label="Email" type="email" />
                     <InputText label="Password" type="password" />
-                    <button type="submit">Entrar</button>
+                    <Button disabled>Entrar</Button>
                     <Link href="/register">Criar Conta</Link>
                 </form>
             </main>

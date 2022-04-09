@@ -6,9 +6,9 @@ interface Props extends InputHTMLAttributes<HTMLElement> {
 
 const InputText = ({ label, ...props }: Props) => {
     return (
-        <label>
+        <label className="flex flex-col w-full">
             <span>{label}</span>
-            <input type="email" {...props} />
+            <input {...props} className="border border-gray-200 px-1" />
         </label>
     );
 };

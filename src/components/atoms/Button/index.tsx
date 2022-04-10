@@ -29,7 +29,6 @@ export const BaseButton = tw.button`
     disabled:cursor-not-allowed
     disabled:bg-gray-200
     px-6
-    mx-2
 `;
 
 export const MainButton = tw(BaseButton)`

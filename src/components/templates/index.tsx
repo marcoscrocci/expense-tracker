@@ -19,3 +19,8 @@ export const Titulo = tw.h1`
 export const FormLogin = tw.form`
     flex flex-col w-full gap-2  max-w-sm
 `;
+
+export const FormCadastro = tw.form`
+    flex flex-col w-full gap-2  max-w-sm
+`;
+

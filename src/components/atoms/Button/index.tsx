@@ -3,7 +3,7 @@ import tw from "tailwind-styled-components";
 
 interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
     children: ReactNode;
-    variant?: 'ghost'
+    variant?: 'ghost' | 'red';
 }
 
 const Button = ({ children, variant, ...props }: Props) => {
@@ -11,6 +11,11 @@ const Button = ({ children, variant, ...props }: Props) => {
         <GhostButton {...props}>
             {children}
         </GhostButton>
+    )
+    if (variant === 'red') return (
+        <RedButton {...props}>
+            {children}
+        </RedButton>
     )
     return (
         <MainButton {...props}>
@@ -34,6 +39,11 @@ export const BaseButton = tw.button`
 export const MainButton = tw(BaseButton)`
     bg-blue-700
     hover:bg-blue-800
+`;
+
+export const RedButton = tw(BaseButton)`
+    bg-red-700
+    hover:bg-red-800
 `;
 
 export const GhostButton = tw(BaseButton)`

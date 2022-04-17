@@ -1,31 +1,12 @@
 import React from "react";
+import tw from "tailwind-styled-components";
 import Button from "../../../../components/atoms/Button";
 
 function Card({ id, title, category, price }) {
     return (
-        <article
-            className={`
-                bg-white 
-                p-4 
-                shadow-lg
-                h-32
-                rounded-lg
-                relative
-                flex
-                flex-col
-                gap-2
-                justify-between 
-            `}
-        >
+        <CardContainer>
             <input type="hidden" id="id" value={id} />
-            <Button
-                variant="ghost"
-                className={`
-                            absolute top-0 right-0 h-8 mr-2 mt-2
-                        `}
-            >
-                Excluir
-            </Button>
+
             <h2 className="font-bold text-xl">{title}</h2>
             <p
                 className={`
@@ -46,8 +27,33 @@ function Card({ id, title, category, price }) {
             >
                 {price}
             </p>
-        </article>
+            <footer className="flex w-full justify-between">
+                <Button
+                    variant="ghost"
+                >
+                    Editar
+                </Button>
+                <Button
+                    variant="ghost"
+                    className="text-red-500"
+                >
+                    Excluir
+                </Button>                
+            </footer>
+        </CardContainer>
     );
 }
+
+export const CardContainer = tw.article`
+    bg-white
+    p-4
+    shadow-lg
+    rounded-lg
+    relative
+    flex
+    flex-col
+    gap-2
+    justify-between
+`;
 
 export default Card;

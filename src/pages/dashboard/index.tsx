@@ -1,4 +1,6 @@
+import Router from "next/router";
 import React from "react";
+
 import Button from "../../components/atoms/Button";
 import { Container } from "../../components/templates";
 import Card from "./components/Card";
@@ -43,6 +45,11 @@ const Dashboard = () => {
         }  
     ];
 
+    const handlerAdd = () => {
+        console.log("handlerAdd");
+        Router.push("/dashboard/add");
+    };
+
     return (
         <Container>
             <header
@@ -58,7 +65,7 @@ const Dashboard = () => {
             >
                 <span className="font-bold text-2xl">Expanse Tracker</span>
                 <nav className="flex gap-4">
-                    <Button>Adicionar Nova Conta</Button>
+                    <Button onClick={handlerAdd}>Adicionar Nova Conta</Button>
                     <Button className="mx-2" variant="ghost">
                         Sair
                     </Button>
@@ -76,7 +83,7 @@ const Dashboard = () => {
                 overflow-y-scroll
                 pb-12
             `}>
-                {items.map((item) => (
+                {items?.map((item) => (
                     <Card
                         key={item.id}
                         id={item.id}

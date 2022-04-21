@@ -11,37 +11,37 @@ const Dashboard = () => {
             id: 1,
             title: "Netflix",
             category: "Streaming",
-            price: "R$ 39,90"
+            amount: "R$ 39,90"
         },
         {
             id: 2,
             title: "Amazon Prime",
             category: "Streaming",
-            price: "R$ 9,90"
+            amount: "R$ 9,90"
         },
         {
             id: 3,
             title: "Spotify",
             category: "Music",
-            price: "R$ 19,90"
+            amount: "R$ 19,90"
         },
         {
             id: 4,
             title: "Claro NET",
             category: "Internet",
-            price: "R$ 189,90"
+            amount: "R$ 189,90"
         },
         {
             id: 5,
             title: "Uber",
             category: "Transporte",
-            price: "R$ 89,90"
+            amount: "R$ 89,90"
         },
         {
             id: 6,
             title: "Eletropaulo",
             category: "Energia",
-            price: "R$ 139,90"
+            amount: "R$ 139,90"
         }  
     ];
 
@@ -89,7 +89,7 @@ const Dashboard = () => {
                         id={item.id}
                         title={item.title}
                         category={item.category}
-                        price={item.price} 
+                        amount={item.amount} 
                     ></Card>
                 ))}
             </main>

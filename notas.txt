@@ -1,3 +1,5 @@
+https://github.com/fischerafael
+https://www.youtube.com/watch?v=xgGm9a1GJWs&list=PLeBknJ2kuv1lcWDHQXLisCytQK5AfL1N6&index=1
 https://github.com/vercel/next.js/tree/canary/examples/with-styled-components
 npx create-next-app --example with-styled-components expense-tracker
 sudo npm i -g create-next-app

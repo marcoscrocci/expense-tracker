@@ -2,7 +2,7 @@ import React from "react";
 import tw from "tailwind-styled-components";
 import Button from "../../../../components/atoms/Button";
 
-function Card({ id, title, category, price }) {
+function Card({ id, title, category, amount }) {
     return (
         <CardContainer>
             <input type="hidden" id="id" value={id} />
@@ -25,7 +25,7 @@ function Card({ id, title, category, price }) {
                     font-medium
                 `}
             >
-                {price}
+                {amount}
             </p>
             <footer className="flex w-full justify-between">
                 <Button
